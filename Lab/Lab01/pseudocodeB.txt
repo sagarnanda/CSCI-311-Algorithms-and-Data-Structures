@@ -1,0 +1,16 @@
+//compare sort method
+int array[9];
+int x=first_card_value();
+int cards_filled=0;
+while(cards_filled<9){
+    if(x>next_card()
+        swap_cards();
+    if(x<next_card())
+        move_next();
+    if(next_card()=null){
+        array[cards_filled]=x;
+        cards_filled++;
+    }
+}
+
+        

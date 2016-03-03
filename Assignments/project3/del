@@ -1,0 +1,19 @@
+g++ -g -std=c++11  AdjacencyMatrix.cpp Graph.cpp HexMap.cpp project3.cpp
+project3.cpp: In function 'std::map<unsigned int, unsigned int> astar(unsigned int, unsigned int, AdjacencyMatrix&)':
+project3.cpp:109:40: error: 'tentative' was not declared in this scope
+            distance_traveled[(*iter)]= tentative distance traveled
+                                        ^
+project3.cpp: In function 'int main()':
+project3.cpp:127:21: error: cannot declare variable 'mygameboard' to be of abstract type 'AdjacencyMatrix'
+     AdjacencyMatrix mygameboard;
+                     ^
+In file included from project3.cpp:6:0:
+AdjacencyMatrix.h:8:7: note:   because the following virtual functions are pure within 'AdjacencyMatrix':
+ class AdjacencyMatrix : public Graph 
+       ^
+In file included from AdjacencyMatrix.h:5:0,
+                 from project3.cpp:6:
+Graph.h:14:18: note: 	virtual void Graph::add_edge(unsigned int, unsigned int)
+     virtual void add_edge(unsigned int, unsigned int)=0;
+                  ^
+make: *** [project3] Error 1

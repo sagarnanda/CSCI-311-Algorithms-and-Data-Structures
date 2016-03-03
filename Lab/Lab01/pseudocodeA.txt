@@ -1,0 +1,14 @@
+arrayA [size];
+arrayB [size];
+
+for (i=0; i<=size; i++)
+{
+    int num = arrayA [i];
+    arrayB [num-1] = arrayA[i];
+}
+
+arrayA = arrayB;
+
+
+
+
